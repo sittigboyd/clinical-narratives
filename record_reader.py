@@ -17,8 +17,7 @@ class RecordReader:
             rec+=line
         emr.close()
         self.patient_info=self.find_tags(rec)
-        #self.split_tags()
-        self.find_meds()
+
                 
     def find_tags(self,record):
         exp="<TAGS>(.*)</TAGS>"
